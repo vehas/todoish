@@ -1,0 +1,7 @@
+node_modules/
+target/
+public/js/compiled/
+out/
+.idea/
+.shadow-cljs/
+
