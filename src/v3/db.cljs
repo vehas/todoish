@@ -51,5 +51,8 @@
    "option 4 > use better code structure"
    ["test for option 4"
     ["prerequisinst growth app codebase until you can not handle it,
-      then pray"]]])
+      then pray"]
+    "option 5 > use npm package"
+    ["test for option 5"
+     ["try to use left-pad then code-mirror then https://github.com/reactjs/react-modal"]]]])
 
