@@ -1,4 +1,4 @@
-#install shadow-cljs and yarn
+# install shadow-cljs and yarn
 ```
 npm install -g shadow-cljs
 npm install -g yarn
