@@ -24,7 +24,7 @@
    "test 8: add board property"
    "test 9: change ui to kanban board style"
 
-   "learning part 4 option"
+   "learning part 5 option"
    "option 1 > datascript/datalog : clojure and lisp in general
      are made for and really good at list manipulation but real world data are in much more complex form
      like tree, graph or regtangle shape data with relational (RDBMS), can we have better tool for query/manipulate this,

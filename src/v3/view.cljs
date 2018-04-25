@@ -9,16 +9,22 @@
     [v3.db :as db]
     [v3.sub :as sub]
     [util.core :as util]))
-
+(defn check-box [id checked]
+  [:input {:type "checkbox"
+           :check checked
+           :on-click #(f/dispatch [::event/completed id])}])
 (defn title [m]
   [:li {:style {:color "green"
                 :padding "10px"
                 :padding-left "20px"
                 :list-style-type "decimal"}}
+   [check-box (:id m) (f/subscribe [])]
+
    [:span {:style {:min-width "300px"}}
           (:title m)]
    [:button {:on-click #(f/dispatch [::event/delete (:id m)])}
             "X"]])
+
 (defn user []
  (fn []
   (let [active-user @(f/subscribe [::main-sub/active-user])]

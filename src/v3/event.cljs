@@ -7,8 +7,7 @@
   (if (empty? (:text @db/input))
       (reset! db/input-check "please input something")
       (do
-        (f/dispatch
-          [::add-todo @db/input])
+        (f/dispatch [::add-todo @db/input])
         (reset! db/input nil))))
 
 
@@ -20,9 +19,14 @@
                  [:tasks id]
                  {:title (:text task)
                   :id    id
-                  :create-at (js/Date)}))))
+                  :create-at (.getTime (js/Date.))}))))
 
 (f/reg-event-db
   ::delete
   (fn [db [_ id]]
     (update-in db [:tasks ] dissoc id)))
+
+(f/reg-event-db
+  ::completed
+  (fn [db [_ id]]
+      (assoc-in db [:tasks id :status ] true)))

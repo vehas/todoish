@@ -3,14 +3,23 @@
 
 (def titles
   (r/atom
-    [{:title "milk"     :id (random-uuid)}
-     {:title "beer"     :id (random-uuid)}
-     {:title  "gas"     :id (random-uuid)}
-     {:title  "charger" :id (random-uuid)}
-     {:title  "chair"   :id (random-uuid)}]))
+    [{:title "milk"     :id (random-uuid) :status false}
+     {:title "beer"     :id (random-uuid) :status false}
+     {:title  "gas"     :id (random-uuid) :status false}
+     {:title  "charger" :id (random-uuid) :status false}
+     {:title  "chair"   :id (random-uuid) :status false}]))
 
 (def input (r/atom {}))
 (def input-check (r/atom nil))
+
+
+
+
+
+
+
+
+
 
 (def goal
   ["show atom ability"
