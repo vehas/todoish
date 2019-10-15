@@ -10,7 +10,7 @@
     "karma-chrome-launcher": "^2.2.0",
     "karma-cljs-test": "^0.1.0",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0",
+    "react-dom": "^16.3.3",
     "rxjs": "^5.5.6",
     "shadow-cljs": "^2.0.144"
   }
